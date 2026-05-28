@@ -1,8 +1,9 @@
 {
   "name": "Remote Work Productivity",
   "short_name": "remote-work-",
-  "start_url": "/",
+  "start_url": "/remote-work-productivity/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#6366f1"
+  "theme_color": "#6366f1",
+  "scope": "/remote-work-productivity/"
 }
