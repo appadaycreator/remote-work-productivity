@@ -3,7 +3,7 @@
   "short_name": "remote-work-",
   "start_url": "/remote-work-productivity/",
   "display": "standalone",
-  "background_color": "#6366f1",
+  "background_color": "#ffffff",
   "theme_color": "#7c3aed",
   "scope": "/remote-work-productivity/"
 }
