@@ -112,8 +112,8 @@
     }
 
     .btn-header-cta {
-      background: #3B82F6;
-      color: #fff;
+      background: #F59E0B;
+      color: #1F2937;
       font-weight: 700;
       font-size: 14px;
       padding: 10px 20px;
@@ -126,7 +126,7 @@
     }
 
     .btn-header-cta:hover {
-      background: #2563EB;
+      background: #D97706;
       transform: translateY(-1px);
     }
 
@@ -152,7 +152,7 @@
        HERO SECTION
     =========================== */
     .hero-section {
-      background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 60%, #C7D7FE 100%);
+      background: linear-gradient(135deg, #0B1D3A 0%, #0D2248 50%, #0F2657 100%);
       padding: 80px 24px;
     }
 
@@ -173,13 +173,13 @@
     }
 
     .hero-tag {
-      background: #EFF6FF;
-      color: #3B82F6;
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.9);
       font-size: 12px;
       font-weight: 600;
       padding: 4px 12px;
       border-radius: 999px;
-      border: 1px solid #BFDBFE;
+      border: 1px solid rgba(255,255,255,0.3);
     }
 
     .hero-h1 {
@@ -187,17 +187,17 @@
       font-weight: 900;
       line-height: 1.2;
       letter-spacing: -0.02em;
-      color: #111827;
+      color: #FFFFFF;
       margin-bottom: 24px;
     }
 
     .hero-h1 .accent {
-      color: #2563EB;
+      color: #FBBF24;
     }
 
     .hero-sub {
       font-size: 17px;
-      color: #4B5563;
+      color: rgba(255, 255, 255, 0.85);
       line-height: 1.7;
       margin-bottom: 32px;
     }
@@ -206,21 +206,21 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #10B981;
-      color: #fff;
+      background: #F59E0B;
+      color: #1F2937;
       font-weight: 700;
       font-size: 18px;
       padding: 16px 36px;
       border-radius: 12px;
       transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
-      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
+      box-shadow: 0 4px 16px rgba(245, 158, 11, 0.45);
       margin-bottom: 20px;
     }
 
     .btn-hero-cta:hover {
-      background: #059669;
+      background: #D97706;
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+      box-shadow: 0 8px 24px rgba(217, 119, 6, 0.55);
     }
 
     .hero-badges {
@@ -228,7 +228,7 @@
       align-items: center;
       gap: 20px;
       font-size: 14px;
-      color: #6B7280;
+      color: rgba(255,255,255,0.75);
       font-weight: 500;
     }
 
@@ -239,7 +239,7 @@
     }
 
     .hero-badges .check-icon {
-      color: #10B981;
+      color: #FBBF24;
       font-weight: 700;
     }
 
@@ -268,24 +268,24 @@
       left: -24px;
       background: white;
       border-radius: 16px;
-      padding: 16px 20px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      padding: 20px 24px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.25);
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
       z-index: 10;
     }
 
     .score-arc-wrap {
       position: relative;
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
     }
 
     .score-arc-wrap svg {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
     }
 
     .score-value {
@@ -293,16 +293,16 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 24px;
+      font-size: 30px;
       font-weight: 900;
-      color: #3B82F6;
+      color: #2563EB;
       line-height: 1;
     }
 
     .score-label {
-      font-size: 11px;
-      font-weight: 600;
-      color: #6B7280;
+      font-size: 12px;
+      font-weight: 700;
+      color: #374151;
       white-space: nowrap;
     }
 
@@ -774,42 +774,102 @@
     }
 
     /* ===========================
-       STATS SECTION
+       WHY CHOOSE US SECTION
     =========================== */
-    .stats-section {
+    .why-section {
       background: white;
-      padding: 64px 24px;
+      padding: 80px 24px;
       border-top: 1px solid #E5E7EB;
       border-bottom: 1px solid #E5E7EB;
     }
 
-    .stats-inner {
-      max-width: 800px;
+    .why-stats-row {
+      max-width: 1100px;
+      margin: 0 auto 48px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-stat-card {
+      background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+      border-radius: 16px;
+      padding: 28px 16px;
+      text-align: center;
+      border: 1px solid #BFDBFE;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .why-stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
+    }
+
+    .why-stat-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .why-stat-num {
+      font-size: 34px;
+      font-weight: 900;
+      color: #1E40AF;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .why-stat-unit {
+      font-size: 15px;
+      font-weight: 700;
+      color: #3B82F6;
+    }
+
+    .why-stat-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6B7280;
+    }
+
+    .why-cards-grid {
+      max-width: 1100px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
-      text-align: center;
+      gap: 24px;
     }
 
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+    .why-card {
+      background: #F8FAFC;
+      border-radius: 16px;
+      padding: 32px 24px;
+      border-left: 4px solid #3B82F6;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .stat-value {
-      font-size: 42px;
+    .why-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+    }
+
+    .why-card-num {
+      font-size: 32px;
       font-weight: 900;
-      color: #3B82F6;
-      letter-spacing: -0.02em;
+      color: #BFDBFE;
+      margin-bottom: 12px;
       line-height: 1;
     }
 
-    .stat-label {
+    .why-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
       font-size: 14px;
-      font-weight: 600;
       color: #6B7280;
+      line-height: 1.75;
     }
 
     /* ===========================
@@ -1017,12 +1077,8 @@
     .cta-overlay {
       position: absolute;
       inset: 0;
-      background: transparent;
+      background: rgba(10, 20, 50, 0.78);
       z-index: 1;
-    }
-
-    .cta-bg {
-      display: none;
     }
 
     .cta-content {
@@ -1050,21 +1106,21 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: #10B981;
-      color: #fff;
+      background: #F59E0B;
+      color: #1F2937;
       font-weight: 700;
       font-size: 18px;
       padding: 18px 52px;
       border-radius: 10px;
       transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
-      box-shadow: 0 6px 24px rgba(16, 185, 129, 0.45);
+      box-shadow: 0 6px 24px rgba(245, 158, 11, 0.5);
       margin-bottom: 32px;
     }
 
     .btn-cta-main:hover {
-      background: #059669;
+      background: #D97706;
       transform: translateY(-2px);
-      box-shadow: 0 10px 36px rgba(16, 185, 129, 0.55);
+      box-shadow: 0 10px 36px rgba(217, 119, 6, 0.6);
     }
 
     .cta-bottom {
@@ -1257,6 +1313,14 @@
       .footer-top {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .why-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-cards-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -1696,21 +1760,53 @@
   </section>
 
   <!-- ========================
-       STATS SECTION
+       WHY CHOOSE US SECTION
   ========================= -->
-  <section class="stats-section">
-    <div class="stats-inner">
-      <div class="stat-item">
-        <div class="stat-value">1分以内</div>
-        <div class="stat-label">平均診断時間</div>
+  <section class="why-section">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">WHY US</div>
+        <h2>選ばれる理由</h2>
+        <p>3,200名以上のテレワーカーに選ばれてきた、確かな理由があります。</p>
       </div>
-      <div class="stat-item">
-        <div class="stat-value">完全無料</div>
-        <div class="stat-label">登録・費用</div>
+      <div class="why-stats-row">
+        <div class="why-stat-card">
+          <div class="why-stat-icon">📊</div>
+          <div class="why-stat-num">3,200<span class="why-stat-unit">名以上</span></div>
+          <div class="why-stat-label">累計利用者数</div>
+        </div>
+        <div class="why-stat-card">
+          <div class="why-stat-icon">⭐</div>
+          <div class="why-stat-num">4.8<span class="why-stat-unit">/5.0</span></div>
+          <div class="why-stat-label">平均満足度スコア</div>
+        </div>
+        <div class="why-stat-card">
+          <div class="why-stat-icon">✅</div>
+          <div class="why-stat-num">92<span class="why-stat-unit">%</span></div>
+          <div class="why-stat-label">改善実感率</div>
+        </div>
+        <div class="why-stat-card">
+          <div class="why-stat-icon">⚡</div>
+          <div class="why-stat-num">1<span class="why-stat-unit">分以内</span></div>
+          <div class="why-stat-label">平均診断時間</div>
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-value">5カテゴリ</div>
-        <div class="stat-label">詳細分析</div>
+      <div class="why-cards-grid">
+        <div class="why-card">
+          <div class="why-card-num">01</div>
+          <h3>科学的アプローチで的確診断</h3>
+          <p>テレワーク研究に基づいた5カテゴリ分析で課題の本質を数値化。漠然とした「なんとなく生産性が低い」を明確に可視化します。</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card-num">02</div>
+          <h3>即実践できる改善アクション</h3>
+          <p>スコア結果に基づく具体的なアドバイスを当日から実践可能。ポモドーロ技法・環境改善・コミュニケーション術など。</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card-num">03</div>
+          <h3>プライバシー完全保護</h3>
+          <p>全処理はブラウザ内で完結。個人情報・回答データが外部サーバーに送信されることは一切なく、安心してご利用いただけます。</p>
+        </div>
       </div>
     </div>
   </section>
