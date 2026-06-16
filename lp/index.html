@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テレワーク生産性診断 | 5分で在宅ワークの課題を発見・改善</title>
+  <meta name="description" content="在宅環境・集中力・コミュニケーション課題を5問で診断。AI改善案付き。登録不要・完全無料。テレワーク生産性スコアを今すぐチェック。">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="テレワーク生産性診断 | 5分で在宅ワークの課題を発見">
+  <meta property="og:description" content="在宅環境・集中力・コミュニケーション課題を5問で診断。AI改善案付き。登録不要・完全無料。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://appadadaycreator.github.io/remote-work-productivity/lp/">
+  <meta property="og:image" content="../assets/photos/photo_01.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="テレワーク生産性診断 | 5分で在宅ワークの課題を発見">
+  <meta name="twitter:description" content="在宅環境・集中力・コミュニケーション課題を5問で診断。AI改善案付き。登録不要・完全無料。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', system-ui, sans-serif;
+      color: #1F2937;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===========================
+       HEADER
+    =========================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #E5E7EB;
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      color: #1E3A5F;
+      white-space: nowrap;
+    }
+
+    .header-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: #3B82F6;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .header-nav a {
+      font-size: 14px;
+      font-weight: 500;
+      color: #6B7280;
+      transition: color 0.2s;
+    }
+
+    .header-nav a:hover {
+      color: #3B82F6;
+    }
+
+    .btn-header-cta {
+      background: #3B82F6;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.1s;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .btn-header-cta:hover {
+      background: #2563EB;
+      transform: translateY(-1px);
+    }
+
+    .header-nav-mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .header-nav-mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #374151;
+      border-radius: 2px;
+    }
+
+    /* ===========================
+       HERO SECTION
+    =========================== */
+    .hero-section {
+      background: #fff;
+      padding: 80px 24px;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .hero-tag {
+      background: #EFF6FF;
+      color: #3B82F6;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid #BFDBFE;
+    }
+
+    .hero-h1 {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #111827;
+      margin-bottom: 24px;
+    }
+
+    .hero-h1 .accent {
+      color: #3B82F6;
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      color: #4B5563;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .btn-hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #10B981;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 16px 36px;
+      border-radius: 12px;
+      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
+      margin-bottom: 20px;
+    }
+
+    .btn-hero-cta:hover {
+      background: #059669;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+    }
+
+    .hero-badges {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      color: #6B7280;
+      font-weight: 500;
+    }
+
+    .hero-badges span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hero-badges .check-icon {
+      color: #10B981;
+      font-weight: 700;
+    }
+
+    .hero-right {
+      position: relative;
+    }
+
+    .hero-photo-wrap {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+    }
+
+    .hero-photo-wrap img {
+      width: 100%;
+      max-width: 480px;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .score-badge {
+      position: absolute;
+      bottom: 24px;
+      left: -24px;
+      background: white;
+      border-radius: 16px;
+      padding: 16px 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      z-index: 10;
+    }
+
+    .score-arc-wrap {
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+    .score-arc-wrap svg {
+      width: 80px;
+      height: 80px;
+    }
+
+    .score-value {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: 900;
+      color: #3B82F6;
+      line-height: 1;
+    }
+
+    .score-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6B7280;
+      white-space: nowrap;
+    }
+
+    /* ===========================
+       SECTION COMMONS
+    =========================== */
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-header h2 {
+      font-size: 36px;
+      font-weight: 900;
+      color: #111827;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-header p {
+      font-size: 17px;
+      color: #6B7280;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      background: #EFF6FF;
+      color: #3B82F6;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ===========================
+       PROBLEM SECTION
+    =========================== */
+    .problem-section {
+      background: #F8FAFC;
+      padding: 80px 24px;
+    }
+
+    .problem-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .problem-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .problem-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+
+    .problem-card-photo {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .problem-card-body {
+      padding: 24px;
+    }
+
+    .problem-card-icon {
+      width: 44px;
+      height: 44px;
+      background: #EFF6FF;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .problem-card-icon img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+
+    .problem-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .problem-card p {
+      font-size: 14px;
+      color: #6B7280;
+      line-height: 1.7;
+    }
+
+    /* ===========================
+       FEATURE SECTION
+    =========================== */
+    .feature-section {
+      background: white;
+      padding: 80px 24px;
+    }
+
+    .feature-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .feature-card {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.14);
+    }
+
+    .feature-card-top-border {
+      height: 4px;
+    }
+
+    .feature-card-photo {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .feature-card-body {
+      padding: 28px 24px;
+    }
+
+    .feature-card-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .feature-card-icon-wrap img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+
+    .feature-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      color: #6B7280;
+      line-height: 1.75;
+    }
+
+    /* ===========================
+       HOW-TO SECTION
+    =========================== */
+    .howto-section {
+      background: #EFF6FF;
+      padding: 80px 24px;
+    }
+
+    .howto-steps {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 40px 1fr 40px 1fr;
+      align-items: center;
+      gap: 0;
+    }
+
+    .howto-step {
+      background: white;
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .howto-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3B82F6;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .howto-step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #3B82F6;
+      color: white;
+      font-weight: 900;
+      font-size: 16px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .howto-step-photo-wrap {
+      width: 120px;
+      height: 120px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+
+    .howto-step-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .howto-step-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #3B82F6;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .howto-step h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .howto-step p {
+      font-size: 13px;
+      color: #6B7280;
+    }
+
+    /* ===========================
+       USE CASES SECTION
+    =========================== */
+    .usecases-section {
+      background: white;
+      padding: 80px 24px;
+    }
+
+    .usecases-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .usecase-card {
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .usecase-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+    }
+
+    .usecase-card-photo {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .usecase-card-body {
+      padding: 18px 20px;
+      background: white;
+    }
+
+    .usecase-card-body p {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .usecase-card-body span {
+      display: block;
+      font-size: 12px;
+      color: #9CA3AF;
+      margin-top: 4px;
+    }
+
+    /* ===========================
+       RESULTS PREVIEW SECTION
+    =========================== */
+    .results-section {
+      background: #F8FAFC;
+      padding: 80px 24px;
+    }
+
+    .results-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .gauge-wrap {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 32px;
+    }
+
+    .gauge-wrap svg {
+      width: 200px;
+      height: 200px;
+    }
+
+    .gauge-center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .gauge-score {
+      font-size: 52px;
+      font-weight: 900;
+      color: #3B82F6;
+      line-height: 1;
+      display: block;
+    }
+
+    .gauge-unit {
+      font-size: 16px;
+      color: #6B7280;
+      font-weight: 600;
+    }
+
+    .score-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .score-bar-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .score-bar-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .score-bar-header .bar-label {
+      color: #374151;
+    }
+
+    .score-bar-header .bar-value {
+      color: #6B7280;
+    }
+
+    .score-bar-track {
+      height: 8px;
+      background: #E5E7EB;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 1s ease;
+    }
+
+    .results-right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .radar-container {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .radar-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #374151;
+      align-self: flex-start;
+    }
+
+    .radar-wrap svg {
+      width: 220px;
+      height: 220px;
+    }
+
+    .advice-box {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      border-left: 4px solid #10B981;
+    }
+
+    .advice-box h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #10B981;
+      margin-bottom: 10px;
+    }
+
+    .advice-box p {
+      font-size: 14px;
+      color: #4B5563;
+      line-height: 1.7;
+    }
+
+    .results-mini-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .results-mini-photos img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ===========================
+       STATS SECTION
+    =========================== */
+    .stats-section {
+      background: white;
+      padding: 64px 24px;
+      border-top: 1px solid #E5E7EB;
+      border-bottom: 1px solid #E5E7EB;
+    }
+
+    .stats-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      text-align: center;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .stat-value {
+      font-size: 42px;
+      font-weight: 900;
+      color: #3B82F6;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #6B7280;
+    }
+
+    /* ===========================
+       TESTIMONIALS SECTION
+    =========================== */
+    .testimonials-section {
+      background: #EFF6FF;
+      padding: 80px 24px;
+    }
+
+    .testimonials-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      transition: transform 0.2s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .testimonial-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 999px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      flex-shrink: 0;
+    }
+
+    .testimonial-author {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .testimonial-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .testimonial-title {
+      font-size: 12px;
+      color: #9CA3AF;
+    }
+
+    .testimonial-stars {
+      color: #F59E0B;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-text {
+      font-size: 14px;
+      color: #4B5563;
+      line-height: 1.75;
+    }
+
+    /* ===========================
+       FAQ SECTION
+    =========================== */
+    .faq-section {
+      background: white;
+      padding: 80px 24px;
+    }
+
+    .faq-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    details.faq-item {
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+
+    details.faq-item[open] {
+      box-shadow: 0 4px 16px rgba(59, 130, 246, 0.12);
+      border-color: #BFDBFE;
+    }
+
+    details.faq-item summary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 24px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+      color: #111827;
+      list-style: none;
+      user-select: none;
+      transition: background 0.15s;
+    }
+
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.faq-item[open] summary {
+      background: #F0F9FF;
+      color: #1D4ED8;
+    }
+
+    details.faq-item summary:hover {
+      background: #F8FAFC;
+    }
+
+    .faq-q-icon {
+      width: 28px;
+      height: 28px;
+      background: #3B82F6;
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    details[open] .faq-q-icon {
+      background: #1D4ED8;
+    }
+
+    .faq-toggle-icon {
+      margin-left: auto;
+      color: #9CA3AF;
+      font-size: 20px;
+      transition: transform 0.2s;
+    }
+
+    details[open] .faq-toggle-icon {
+      transform: rotate(45deg);
+      color: #3B82F6;
+    }
+
+    .faq-answer {
+      padding: 0 24px 20px 64px;
+      font-size: 14px;
+      color: #4B5563;
+      line-height: 1.75;
+    }
+
+    .faq-side-photo {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      object-fit: cover;
+      height: 360px;
+    }
+
+    /* ===========================
+       CTA SECTION
+    =========================== */
+    .cta-section {
+      position: relative;
+      padding: 100px 24px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(30, 58, 95, 0.82);
+      z-index: 1;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .cta-content h2 {
+      font-size: 40px;
+      font-weight: 900;
+      color: white;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .cta-content p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 40px;
+    }
+
+    .btn-cta-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #10B981;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 18px 52px;
+      border-radius: 10px;
+      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 6px 24px rgba(16, 185, 129, 0.45);
+      margin-bottom: 32px;
+    }
+
+    .btn-cta-main:hover {
+      background: #059669;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 36px rgba(16, 185, 129, 0.55);
+    }
+
+    .cta-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .cta-thumb {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .cta-stats {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .cta-stat {
+      color: rgba(255,255,255,0.85);
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cta-stat-val {
+      color: #34D399;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    .site-footer {
+      background: #374151;
+      color: rgba(255,255,255,0.8);
+      padding: 40px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-nav a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      transition: color 0.2s;
+    }
+
+    .footer-nav a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+    }
+
+    /* ===========================
+       RESPONSIVE: MOBILE
+    =========================== */
+    @media (max-width: 768px) {
+      .header-nav {
+        display: none;
+      }
+
+      .btn-header-cta {
+        font-size: 13px;
+        padding: 8px 14px;
+      }
+
+      .hero-section {
+        padding: 48px 20px;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero-h1 {
+        font-size: 36px;
+      }
+
+      .hero-sub {
+        font-size: 15px;
+      }
+
+      .btn-hero-cta {
+        font-size: 16px;
+        padding: 14px 28px;
+      }
+
+      .hero-photo-wrap img {
+        height: 280px;
+      }
+
+      .score-badge {
+        left: 16px;
+        bottom: 16px;
+      }
+
+      .section-header h2 {
+        font-size: 26px;
+      }
+
+      .problem-grid,
+      .feature-grid,
+      .usecases-grid,
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .howto-steps {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .howto-arrow {
+        transform: rotate(90deg);
+      }
+
+      .results-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .stats-inner {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .faq-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-side-photo {
+        display: none;
+      }
+
+      .cta-content h2 {
+        font-size: 28px;
+      }
+
+      .cta-content p {
+        font-size: 15px;
+      }
+
+      .btn-cta-main {
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+      .problem-grid,
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .usecases-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .howto-steps {
+        grid-template-columns: 1fr 30px 1fr 30px 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========================
+       HEADER
+  ========================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/remote-work-productivity/" class="header-logo">
+        <div class="header-logo-icon">T</div>
+        テレワーク生産性診断
+      </a>
+      <nav class="header-nav">
+        <a href="#features">特徴</a>
+        <a href="#howto">使い方</a>
+        <a href="#faq">FAQ</a>
+        <a href="/remote-work-productivity/" class="btn-header-cta">今すぐ診断してみる →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================
+       HERO SECTION
+  ========================= -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-tags">
+          <span class="hero-tag">在宅環境</span>
+          <span class="hero-tag">テレワーク</span>
+          <span class="hero-tag">コミュニケーション</span>
+          <span class="hero-tag">生産性スコア</span>
+        </div>
+        <h1 class="hero-h1">
+          テレワーク生産性を<br>
+          <span class="accent">5分で診断</span>
+        </h1>
+        <p class="hero-sub">
+          在宅環境・集中力・コミュニケーション課題を5問で診断。AI改善案付き。登録不要・完全無料。
+        </p>
+        <a href="/remote-work-productivity/" class="btn-hero-cta">
+          今すぐ診断してみる →
+        </a>
+        <div class="hero-badges">
+          <span><span class="check-icon">✓</span> 登録不要</span>
+          <span><span class="check-icon">✓</span> 完全無料</span>
+          <span><span class="check-icon">✓</span> スマホ対応</span>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <img src="../assets/photos/photo_01.jpg" alt="テレワーク中の女性" width="480" height="400">
+          <div class="score-badge">
+            <div class="score-arc-wrap">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="34" stroke="#E5E7EB" stroke-width="6" fill="none"/>
+                <circle cx="40" cy="40" r="34" stroke="url(#scoreGrad)"
+                  stroke-width="6" fill="none"
+                  stroke-dasharray="213.6"
+                  stroke-dashoffset="51.3"
+                  stroke-linecap="round"
+                  transform="rotate(-90 40 40)"/>
+                <defs>
+                  <linearGradient id="scoreGrad" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#3B82F6"/>
+                    <stop offset="100%" stop-color="#10B981"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="score-value">78</div>
+            </div>
+            <div class="score-label">生産性スコア</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       PROBLEM SECTION
+  ========================= -->
+  <section class="problem-section" id="features">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">PROBLEM</div>
+        <h2>こんなお悩みはありませんか？</h2>
+        <p>テレワークには独自の課題があります。まずは自分の状況を把握しましょう。</p>
+      </div>
+      <div class="problem-grid">
+        <!-- Card 1 -->
+        <div class="problem-card">
+          <img src="../assets/photos/photo_07.jpg" alt="孤立感のある在宅ワーク" class="problem-card-photo" loading="lazy">
+          <div class="problem-card-body">
+            <div class="problem-card-icon">
+              <img src="../assets/icons/split/02-01.png" alt="チャットアイコン">
+            </div>
+            <h3>孤立感・サボり感がある</h3>
+            <p>オフィス勤務と違い、周囲の目がないテレワーク環境では「今日ちゃんとできたのか」と不安になりがちです。</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="problem-card">
+          <img src="../assets/photos/photo_08.jpg" alt="集中できない在宅環境" class="problem-card-photo" loading="lazy">
+          <div class="problem-card-body">
+            <div class="problem-card-icon">
+              <img src="../assets/icons/split/02-06.png" alt="スピードメーターアイコン">
+            </div>
+            <h3>集中できない環境</h3>
+            <p>家族の声、通知の多さ、快適でない椅子や机…在宅特有の集中阻害要因が生産性を下げています。</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="problem-card">
+          <img src="../assets/photos/photo_09.jpg" alt="コミュニケーション不足" class="problem-card-photo" loading="lazy">
+          <div class="problem-card-body">
+            <div class="problem-card-icon">
+              <img src="../assets/icons/split/04-05.png" alt="チームアイコン">
+            </div>
+            <h3>コミュニケーション不足</h3>
+            <p>チャットだけでは伝わらないニュアンス。雑談ゼロの日々で、チームとの距離を感じていませんか？</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FEATURE SECTION
+  ========================= -->
+  <section class="feature-section" id="features-detail">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">FEATURES</div>
+        <h2>テレワーク生産性診断の3つの特徴</h2>
+        <p>他のサービスと違う、私たちのこだわりポイントをご紹介します。</p>
+      </div>
+      <div class="feature-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-card-top-border" style="background:#3B82F6;"></div>
+          <img src="../assets/photos/photo_10.jpg" alt="5問で完了" class="feature-card-photo" loading="lazy">
+          <div class="feature-card-body">
+            <div class="feature-card-icon-wrap" style="background:#EFF6FF;">
+              <img src="../assets/icons/split/01-03.png" alt="時計アイコン">
+            </div>
+            <h3>5問で完了診断</h3>
+            <p>他社の32〜35問と比べ、たった5問で完了。忙しいテレワーカーに最適な設計で、移動中のスキマ時間にもサッと確認できます。</p>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-card-top-border" style="background:#10B981;"></div>
+          <img src="../assets/photos/photo_11.jpg" alt="プライベート処理" class="feature-card-photo" loading="lazy">
+          <div class="feature-card-body">
+            <div class="feature-card-icon-wrap" style="background:#F0FDF4;">
+              <img src="../assets/icons/split/01-06.png" alt="鍵アイコン">
+            </div>
+            <h3>完全プライベート処理</h3>
+            <p>ブラウザ内で完全処理。回答がサーバーに送信されることはありません。個人情報を入力せず、安心してご利用いただけます。</p>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-card-top-border" style="background:#F59E0B;"></div>
+          <img src="../assets/photos/photo_12.jpg" alt="AI改善案" class="feature-card-photo" loading="lazy">
+          <div class="feature-card-body">
+            <div class="feature-card-icon-wrap" style="background:#FFFBEB;">
+              <img src="../assets/icons/split/02-08.png" alt="AIアイコン">
+            </div>
+            <h3>AI的確改善案を提案</h3>
+            <p>スコアに基づく個別の改善アクションを即座に提案。「なんとなく感」ではなく、明日から実践できる具体的なアドバイスを受け取れます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       HOW-TO SECTION
+  ========================= -->
+  <section class="howto-section" id="howto">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">HOW TO USE</div>
+        <h2>診断の流れ</h2>
+        <p>わずか3ステップ。1〜2分で診断完了です。</p>
+      </div>
+      <div class="howto-steps">
+        <!-- Step 1 -->
+        <div class="howto-step">
+          <div class="howto-step-num">1</div>
+          <div class="howto-step-photo-wrap">
+            <img src="../assets/photos/photo_02.jpg" alt="質問に答える" loading="lazy">
+          </div>
+          <div class="howto-step-label">STEP 1</div>
+          <h3>5問の質問に答える</h3>
+          <p>約1分で完了</p>
+        </div>
+        <div class="howto-arrow">→</div>
+        <!-- Step 2 -->
+        <div class="howto-step">
+          <div class="howto-step-num">2</div>
+          <div class="howto-step-photo-wrap">
+            <img src="../assets/photos/photo_03.jpg" alt="スコアを確認" loading="lazy">
+          </div>
+          <div class="howto-step-label">STEP 2</div>
+          <h3>生産性スコアを確認</h3>
+          <p>5カテゴリ詳細表示</p>
+        </div>
+        <div class="howto-arrow">→</div>
+        <!-- Step 3 -->
+        <div class="howto-step">
+          <div class="howto-step-num">3</div>
+          <div class="howto-step-photo-wrap">
+            <img src="../assets/photos/photo_04.jpg" alt="改善案を実践" loading="lazy">
+          </div>
+          <div class="howto-step-label">STEP 3</div>
+          <h3>改善案を実践</h3>
+          <p>具体的アクションを受け取る</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       USE CASES SECTION
+  ========================= -->
+  <section class="usecases-section">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">USE CASES</div>
+        <h2>こんな方に活用されています</h2>
+        <p>さまざまなシーンでご活用いただいています。</p>
+      </div>
+      <div class="usecases-grid">
+        <div class="usecase-card">
+          <img src="../assets/photos/photo_05.jpg" alt="生産性を把握したい" class="usecase-card-photo" loading="lazy">
+          <div class="usecase-card-body">
+            <p>生産性を把握したい</p>
+            <span>自分の在宅環境を客観視したい方に</span>
+          </div>
+        </div>
+        <div class="usecase-card">
+          <img src="../assets/photos/photo_06.jpg" alt="改善アクションを知りたい" class="usecase-card-photo" loading="lazy">
+          <div class="usecase-card-body">
+            <p>改善アクションを知りたい</p>
+            <span>具体的な行動につなげたい方に</span>
+          </div>
+        </div>
+        <div class="usecase-card">
+          <img src="../assets/photos/photo_13.jpg" alt="チームで診断したい" class="usecase-card-photo" loading="lazy">
+          <div class="usecase-card-body">
+            <p>チームで診断したい</p>
+            <span>1on1やチームミーティングで活用</span>
+          </div>
+        </div>
+        <div class="usecase-card">
+          <img src="../assets/photos/photo_14.jpg" alt="週次振り返りに" class="usecase-card-photo" loading="lazy">
+          <div class="usecase-card-body">
+            <p>週次振り返りに</p>
+            <span>毎週のレビューに定期的に活用</span>
+          </div>
+        </div>
+        <div class="usecase-card">
+          <img src="../assets/photos/photo_15.jpg" alt="転職前に整理したい" class="usecase-card-photo" loading="lazy">
+          <div class="usecase-card-body">
+            <p>転職前に整理したい</p>
+            <span>現状の強みと弱みを可視化したい方に</span>
+          </div>
+        </div>
+        <div class="usecase-card">
+          <img src="../assets/photos/photo_16.jpg" alt="新習慣を作りたい" class="usecase-card-photo" loading="lazy">
+          <div class="usecase-card-body">
+            <p>新習慣を作りたい</p>
+            <span>テレワーク習慣の改善を始めたい方に</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       RESULTS PREVIEW SECTION
+  ========================= -->
+  <section class="results-section">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">PREVIEW</div>
+        <h2>診断結果のイメージ</h2>
+        <p>診断後に表示される結果画面のプレビューです。</p>
+      </div>
+      <div class="results-inner">
+        <!-- LEFT: Gauge + Bars -->
+        <div>
+          <div class="gauge-wrap">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="80" stroke="#E5E7EB" stroke-width="14" fill="none"/>
+              <circle cx="100" cy="100" r="80"
+                stroke="url(#mainGauge)"
+                stroke-width="14" fill="none"
+                stroke-dasharray="502.65"
+                stroke-dashoffset="120.63"
+                stroke-linecap="round"
+                transform="rotate(-90 100 100)"/>
+              <defs>
+                <linearGradient id="mainGauge" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#3B82F6"/>
+                  <stop offset="100%" stop-color="#10B981"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="gauge-center-text">
+              <span class="gauge-score">78</span>
+              <span class="gauge-unit">点</span>
+            </div>
+          </div>
+
+          <div class="score-bars">
+            <div class="score-bar-item">
+              <div class="score-bar-header">
+                <span class="bar-label">🏠 環境</span>
+                <span class="bar-value">80%</span>
+              </div>
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width:80%;background:#3B82F6;"></div>
+              </div>
+            </div>
+            <div class="score-bar-item">
+              <div class="score-bar-header">
+                <span class="bar-label">🎯 集中力</span>
+                <span class="bar-value">70%</span>
+              </div>
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width:70%;background:#10B981;"></div>
+              </div>
+            </div>
+            <div class="score-bar-item">
+              <div class="score-bar-header">
+                <span class="bar-label">🔄 切り替え</span>
+                <span class="bar-value">60%</span>
+              </div>
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width:60%;background:#F59E0B;"></div>
+              </div>
+            </div>
+            <div class="score-bar-item">
+              <div class="score-bar-header">
+                <span class="bar-label">💬 コミュニケーション</span>
+                <span class="bar-value">75%</span>
+              </div>
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width:75%;background:#3B82F6;"></div>
+              </div>
+            </div>
+            <div class="score-bar-item">
+              <div class="score-bar-header">
+                <span class="bar-label">📋 自己管理</span>
+                <span class="bar-value">85%</span>
+              </div>
+              <div class="score-bar-track">
+                <div class="score-bar-fill" style="width:85%;background:#10B981;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Radar + Advice -->
+        <div class="results-right">
+          <div class="radar-container">
+            <div class="radar-title">📊 5カテゴリ レーダーチャート</div>
+            <div class="radar-wrap">
+              <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background pentagons -->
+                <polygon points="110,30 188,80 168,168 52,168 32,80"
+                  fill="none" stroke="#E5E7EB" stroke-width="1"/>
+                <polygon points="110,50 174,88 157,158 63,158 46,88"
+                  fill="none" stroke="#E5E7EB" stroke-width="1"/>
+                <polygon points="110,70 160,96 146,148 74,148 60,96"
+                  fill="none" stroke="#E5E7EB" stroke-width="1"/>
+                <!-- Data area -->
+                <polygon points="110,36 182,84 164,165 56,165 38,84"
+                  fill="rgba(59,130,246,0.15)" stroke="#3B82F6" stroke-width="2"/>
+                <!-- Data points -->
+                <circle cx="110" cy="36" r="5" fill="#3B82F6"/>
+                <circle cx="182" cy="84" r="5" fill="#3B82F6"/>
+                <circle cx="164" cy="165" r="5" fill="#3B82F6"/>
+                <circle cx="56" cy="165" r="5" fill="#3B82F6"/>
+                <circle cx="38" cy="84" r="5" fill="#3B82F6"/>
+                <!-- Labels -->
+                <text x="110" y="22" text-anchor="middle" font-size="11" fill="#4B5563" font-family="sans-serif" font-weight="600">環境</text>
+                <text x="196" y="86" text-anchor="start" font-size="11" fill="#4B5563" font-family="sans-serif" font-weight="600">集中力</text>
+                <text x="170" y="185" text-anchor="middle" font-size="11" fill="#4B5563" font-family="sans-serif" font-weight="600">切り替え</text>
+                <text x="50" y="185" text-anchor="middle" font-size="11" fill="#4B5563" font-family="sans-serif" font-weight="600">コミュニケーション</text>
+                <text x="14" y="86" text-anchor="start" font-size="11" fill="#4B5563" font-family="sans-serif" font-weight="600">自己管理</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="advice-box">
+            <h4>💡 改善案の例</h4>
+            <p>ポモドーロテクニックで集中力を向上させましょう。25分作業・5分休憩のサイクルで、集中力の持続と疲労軽減を両立できます。また、毎朝15分のチェックインミーティングをチームに提案し、コミュニケーション改善につなげましょう。</p>
+          </div>
+
+          <div class="results-mini-photos">
+            <img src="../assets/photos/photo_17.jpg" alt="診断を受けた方" loading="lazy">
+            <img src="../assets/photos/photo_18.jpg" alt="診断を受けた方" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       STATS SECTION
+  ========================= -->
+  <section class="stats-section">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-value">1分以内</div>
+        <div class="stat-label">平均診断時間</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">完全無料</div>
+        <div class="stat-label">登録・費用</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">5カテゴリ</div>
+        <div class="stat-label">詳細分析</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       TESTIMONIALS SECTION
+  ========================= -->
+  <section class="testimonials-section">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">TESTIMONIALS</div>
+        <h2>診断を受けた方の声</h2>
+        <p>多くのテレワーカーが生産性改善に役立てています。</p>
+      </div>
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="../assets/photos/photo_17.jpg" alt="鈴木さん" class="testimonial-avatar" loading="lazy">
+            <div class="testimonial-author">
+              <div class="testimonial-name">鈴木 優子さん</div>
+              <div class="testimonial-title">IT企業 / マーケター（在宅3年目）</div>
+            </div>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">5問なのに的確な診断に驚きました。「切り替え力が低い」という結果から仕事終わりのルーティンを作ったら、オンオフの切り替えが格段に楽になりました。</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="../assets/photos/photo_18.jpg" alt="田中さん" class="testimonial-avatar" loading="lazy">
+            <div class="testimonial-author">
+              <div class="testimonial-name">田中 健一さん</div>
+              <div class="testimonial-title">フリーランス / エンジニア（在宅5年目）</div>
+            </div>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">登録不要でサッと使えるのが最高です。週1でチェックして変化を追っています。AI改善案が具体的で、実際にポモドーロを始めてから生産性が上がった気がします。</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="../assets/photos/photo_19.jpg" alt="山田さん" class="testimonial-avatar" loading="lazy">
+            <div class="testimonial-author">
+              <div class="testimonial-name">山田 美咲さん</div>
+              <div class="testimonial-title">大手メーカー / 営業（テレワーク歴1年）</div>
+            </div>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">チームで共有して1on1の話題に使っています。「コミュニケーション不足」の課題が共通して出て、チーム全体の課題として取り組めるようになりました。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FAQ SECTION
+  ========================= -->
+  <section class="faq-section" id="faq">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-header">
+        <div class="section-label">FAQ</div>
+        <h2>よくある質問</h2>
+      </div>
+      <div class="faq-inner">
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q-icon">Q</span>
+              診断は完全無料ですか？
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              はい、完全無料・登録不要でご利用いただけます。クレジットカードの入力や会員登録は一切不要です。今すぐそのままお使いください。
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q-icon">Q</span>
+              スマートフォンで使えますか？
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              PC・スマートフォン・タブレット、すべての端末に対応しています。モバイルファーストで設計されており、移動中や休憩時間にもスムーズにご利用いただけます。
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q-icon">Q</span>
+              入力データは保存されますか？
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              診断結果はブラウザ内（ローカルストレージ）にのみ保存されます。回答データがサーバーに送信されることは一切ありません。個人情報を入力する必要もなく、完全にプライベートな環境で診断できます。
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q-icon">Q</span>
+              何分かかりますか？
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              5問のみですので、1〜2分で完了します。選択式の質問なので素早く回答でき、結果もすぐに表示されます。お忙しい方でも気軽にご利用いただけます。
+            </div>
+          </details>
+        </div>
+        <img src="../assets/photos/photo_20.jpg" alt="FAQ サポートイメージ" class="faq-side-photo" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       CTA SECTION
+  ========================= -->
+  <section class="cta-section">
+    <img src="../assets/photos/photo_21.jpg" alt="" class="cta-bg" loading="lazy" aria-hidden="true">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <h2>テレワーク生産性を<br>今すぐ診断！</h2>
+      <p>5問・1分・完全無料。登録不要でいますぐスタート。</p>
+      <a href="/remote-work-productivity/" class="btn-cta-main">
+        今すぐ診断してみる →
+      </a>
+      <div class="cta-bottom">
+        <img src="../assets/photos/photo_22.jpg" alt="" class="cta-thumb" loading="lazy" aria-hidden="true">
+        <div class="cta-stats">
+          <div class="cta-stat">
+            <span class="cta-stat-val">5問</span>
+            のみ
+          </div>
+          <div class="cta-stat">
+            <span class="cta-stat-val">1分</span>
+            で完了
+          </div>
+          <div class="cta-stat">
+            <span class="cta-stat-val">完全</span>
+            無料
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER
+  ========================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">🏠 テレワーク生産性診断</div>
+        <nav class="footer-nav">
+          <a href="../privacy-policy.html">プライバシーポリシー</a>
+          <a href="../terms.html">利用規約</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="/remote-work-productivity/">診断を始める</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 AppADayCreator. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
