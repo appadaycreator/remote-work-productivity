@@ -152,7 +152,7 @@
        HERO SECTION
     =========================== */
     .hero-section {
-      background: #fff;
+      background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 60%, #C7D7FE 100%);
       padding: 80px 24px;
     }
 
@@ -160,8 +160,8 @@
       max-width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 56px;
       align-items: center;
     }
 
@@ -192,7 +192,7 @@
     }
 
     .hero-h1 .accent {
-      color: #3B82F6;
+      color: #2563EB;
     }
 
     .hero-sub {
@@ -256,8 +256,8 @@
 
     .hero-photo-wrap img {
       width: 100%;
-      max-width: 480px;
-      height: 400px;
+      max-width: 540px;
+      height: 500px;
       object-fit: cover;
       display: block;
     }
@@ -373,12 +373,12 @@
 
     .problem-card-photo {
       width: 100%;
-      height: 160px;
+      height: 130px;
       object-fit: cover;
     }
 
     .problem-card-body {
-      padding: 24px;
+      padding: 16px 20px 20px;
     }
 
     .problem-card-icon {
@@ -399,14 +399,14 @@
     }
 
     .problem-card h3 {
-      font-size: 18px;
-      font-weight: 700;
+      font-size: 17px;
+      font-weight: 800;
       color: #111827;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .problem-card p {
-      font-size: 14px;
+      font-size: 13px;
       color: #6B7280;
       line-height: 1.7;
     }
@@ -636,14 +636,14 @@
 
     .gauge-wrap {
       position: relative;
-      width: 200px;
-      height: 200px;
-      margin: 0 auto 32px;
+      width: 240px;
+      height: 240px;
+      margin: 0 auto 36px;
     }
 
     .gauge-wrap svg {
-      width: 200px;
-      height: 200px;
+      width: 240px;
+      height: 240px;
     }
 
     .gauge-center-text {
@@ -655,9 +655,9 @@
     }
 
     .gauge-score {
-      font-size: 52px;
+      font-size: 64px;
       font-weight: 900;
-      color: #3B82F6;
+      color: #2563EB;
       line-height: 1;
       display: block;
     }
@@ -683,20 +683,21 @@
     .score-bar-header {
       display: flex;
       justify-content: space-between;
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 700;
     }
 
     .score-bar-header .bar-label {
-      color: #374151;
+      color: #1F2937;
     }
 
     .score-bar-header .bar-value {
-      color: #6B7280;
+      color: #2563EB;
+      font-weight: 800;
     }
 
     .score-bar-track {
-      height: 8px;
+      height: 14px;
       background: #E5E7EB;
       border-radius: 999px;
       overflow: hidden;
@@ -733,8 +734,8 @@
     }
 
     .radar-wrap svg {
-      width: 220px;
-      height: 220px;
+      width: 260px;
+      height: 260px;
     }
 
     .advice-box {
@@ -1001,6 +1002,7 @@
       padding: 100px 24px;
       text-align: center;
       overflow: hidden;
+      background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 50%, #2563EB 100%);
     }
 
     .cta-bg {
@@ -1015,8 +1017,12 @@
     .cta-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(30, 58, 95, 0.82);
+      background: transparent;
       z-index: 1;
+    }
+
+    .cta-bg {
+      display: none;
     }
 
     .cta-content {
@@ -1189,7 +1195,7 @@
       }
 
       .hero-photo-wrap img {
-        height: 280px;
+        height: 320px;
       }
 
       .score-badge {
@@ -1570,20 +1576,20 @@
       </div>
       <div class="results-inner">
         <!-- LEFT: Gauge + Bars -->
-        <div>
+        <div style="background:white;border-radius:20px;padding:36px 32px;box-shadow:0 4px 24px rgba(0,0,0,0.09);">
           <div class="gauge-wrap">
             <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="80" stroke="#E5E7EB" stroke-width="14" fill="none"/>
+              <circle cx="100" cy="100" r="80" stroke="#E5E7EB" stroke-width="16" fill="none"/>
               <circle cx="100" cy="100" r="80"
                 stroke="url(#mainGauge)"
-                stroke-width="14" fill="none"
+                stroke-width="16" fill="none"
                 stroke-dasharray="502.65"
                 stroke-dashoffset="120.63"
                 stroke-linecap="round"
                 transform="rotate(-90 100 100)"/>
               <defs>
                 <linearGradient id="mainGauge" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#3B82F6"/>
+                  <stop offset="0%" stop-color="#2563EB"/>
                   <stop offset="100%" stop-color="#10B981"/>
                 </linearGradient>
               </defs>
@@ -1601,7 +1607,7 @@
                 <span class="bar-value">80%</span>
               </div>
               <div class="score-bar-track">
-                <div class="score-bar-fill" style="width:80%;background:#3B82F6;"></div>
+                <div class="score-bar-fill" style="width:80%;background:#2563EB;"></div>
               </div>
             </div>
             <div class="score-bar-item">
@@ -1628,7 +1634,7 @@
                 <span class="bar-value">75%</span>
               </div>
               <div class="score-bar-track">
-                <div class="score-bar-fill" style="width:75%;background:#3B82F6;"></div>
+                <div class="score-bar-fill" style="width:75%;background:#2563EB;"></div>
               </div>
             </div>
             <div class="score-bar-item">
